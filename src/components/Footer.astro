@@ -145,15 +145,37 @@ const today = new Date();
 		border-width: 0;
 	}
 
-	@media (max-width: 768px) {
-		.footer-content {
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-		}
+ @media (max-width: 768px) {
+ 	.footer-content {
+ 		flex-direction: column;
+ 		align-items: center;
+ 		text-align: center;
+ 	}
 
-		.social-links {
-			justify-content: center;
-		}
-	}
+ 	.social-links {
+ 		justify-content: center;
+ 	}
+
+ 	.footer-section {
+ 		min-width: 180px;
+ 	}
+ }
+
+ @media (max-width: 480px) {
+ 	footer {
+ 		padding: 2em 0.75em;
+ 	}
+
+ 	.footer-section {
+ 		min-width: 0;
+ 		width: 100%;
+ 		margin: 0 0 1.5rem;
+ 	}
+
+ 	.copyright {
+ 		margin-top: 1rem;
+ 		padding-top: 1rem;
+ 		font-size: 0.8rem;
+ 	}
+ }
 </style>

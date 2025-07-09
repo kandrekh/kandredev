@@ -295,16 +295,73 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				text-align: center;
 			}
 
-			/* Responsive Adjustments */
-			@media (max-width: 768px) {
-				.hero h1 {
-					font-size: 2.5rem;
-				}
+   /* Responsive Adjustments */
+   @media (max-width: 768px) {
+   	.container {
+   		padding: 0 1.5rem;
+   	}
 
-				.project-grid, .showcase-grid {
-					grid-template-columns: 1fr;
-				}
-			}
+   	section {
+   		padding: 3rem 0;
+   	}
+
+   	.hero {
+   		padding: 4rem 0;
+   	}
+
+   	.hero h1 {
+   		font-size: 2.5rem;
+   	}
+
+   	.project-grid, .showcase-grid {
+   		grid-template-columns: 1fr;
+   	}
+
+   	.btn {
+   		padding: 0.7rem 1.2rem;
+   	}
+   }
+
+   @media (max-width: 480px) {
+   	.container {
+   		padding: 0 1rem;
+   	}
+
+   	section {
+   		padding: 2rem 0;
+   	}
+
+   	.hero {
+   		padding: 3rem 0;
+   	}
+
+   	.hero h1 {
+   		font-size: 2rem;
+   	}
+
+   	.hero .subtext {
+   		font-size: 1rem;
+   	}
+
+   	.btn {
+   		padding: 0.6rem 1rem;
+   		font-size: 0.9rem;
+   		margin-right: 0.5rem;
+   	}
+
+   	.project-card {
+   		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   	}
+
+   	.card-content {
+   		padding: 1.2rem;
+   	}
+
+   	.skill-badge {
+   		padding: 0.4rem 0.8rem;
+   		font-size: 0.8rem;
+   	}
+   }
 		</style>
 	</body>
 </html>

@@ -49,9 +49,33 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
 			}
-			.last-updated-on {
-				font-style: italic;
-			}
+   .last-updated-on {
+   	font-style: italic;
+   }
+
+   @media (max-width: 720px) {
+   	.prose {
+   		padding: 0.8em;
+   	}
+   	.title {
+   		padding: 0.8em 0;
+   	}
+   }
+
+   @media (max-width: 480px) {
+   	.prose {
+   		padding: 0.6em;
+   	}
+   	.title {
+   		padding: 0.6em 0;
+   	}
+   	.title h1 {
+   		font-size: 1.8em;
+   	}
+   	.date {
+   		font-size: 0.9em;
+   	}
+   }
 		</style>
 	</head>
 
